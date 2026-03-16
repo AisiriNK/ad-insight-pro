@@ -1,0 +1,40 @@
+{
+  "insights": [
+    {
+      "type": "revenue_optimization",
+      "title": "High ROI Data Provider",
+      "description": "ProviderA generates 2.8x ROI compared to average providers. Consider increasing allocation.",
+      "confidence": 0.91
+    },
+    {
+      "type": "audience_insight",
+      "title": "Best Performing Audience Segment",
+      "description": "Health Enthusiasts segment generates highest revenue per impression at $12.60 CPM.",
+      "confidence": 0.88
+    },
+    {
+      "type": "saturation",
+      "title": "Segment Saturation Detected",
+      "description": "Students segment has 12M impressions but only $15K revenue — consider reallocating budget.",
+      "confidence": 0.86
+    },
+    {
+      "type": "market_trend",
+      "title": "Health Vertical Growth",
+      "description": "Health vertical revenue increased by 22% month-over-month, outpacing all other verticals.",
+      "confidence": 0.82
+    },
+    {
+      "type": "operational_issue",
+      "title": "Imbalance Spike Detected",
+      "description": "Data imbalance increased significantly in last reporting cycle across 3 providers.",
+      "confidence": 0.80
+    },
+    {
+      "type": "reporting_issue",
+      "title": "Delayed Reporting",
+      "description": "Usage report dates are delayed by more than 7 days for 14 records across 2 providers.",
+      "confidence": 0.78
+    }
+  ]
+}
