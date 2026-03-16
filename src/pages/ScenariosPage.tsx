@@ -1,21 +1,11 @@
 import { useAppStore } from "@/services/store";
 import { ScenariosGrid } from "@/components/ScenariosPanel";
-import { FlaskConical } from "lucide-react";
+import scenariosMock from "@/mock/scenarios.json";
+import type { Scenario } from "@/types/api";
 
 export default function ScenariosPage() {
   const { dashboardData } = useAppStore();
-
-  if (!dashboardData) {
-    return (
-      <div className="container py-16 text-center">
-        <FlaskConical className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-        <h2 className="text-lg font-semibold text-foreground mb-2">No scenarios yet</h2>
-        <p className="text-sm text-muted-foreground">
-          Upload data and run analysis to generate what-if scenarios.
-        </p>
-      </div>
-    );
-  }
+  const scenarios = (dashboardData?.scenarios || scenariosMock.scenarios) as Scenario[];
 
   return (
     <div className="container py-8 space-y-6">
@@ -25,7 +15,7 @@ export default function ScenariosPage() {
           Explore projected outcomes based on AI-generated scenarios
         </p>
       </div>
-      <ScenariosGrid scenarios={dashboardData.scenarios} />
+      <ScenariosGrid scenarios={scenarios} />
     </div>
   );
 }
