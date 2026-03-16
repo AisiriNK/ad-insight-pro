@@ -1,0 +1,108 @@
+{
+  "summary": {
+    "kpis": {
+      "total_revenue": 1245300,
+      "total_net_revenue": 842100,
+      "total_impressions": 98500000,
+      "total_data_providers": 14,
+      "total_segments": 120,
+      "avg_cpm": 3.42
+    },
+    "charts": [
+      {
+        "id": "revenue_by_data_provider",
+        "title": "Revenue by Data Provider",
+        "type": "bar",
+        "x_axis": "data_provider",
+        "y_axis": "revenue",
+        "data": [
+          {"data_provider": "ProviderA", "revenue": 240000},
+          {"data_provider": "ProviderB", "revenue": 180000},
+          {"data_provider": "ProviderC", "revenue": 155000},
+          {"data_provider": "ProviderD", "revenue": 130000},
+          {"data_provider": "ProviderE", "revenue": 98000},
+          {"data_provider": "ProviderF", "revenue": 75000}
+        ]
+      },
+      {
+        "id": "top_provider_roi",
+        "title": "Top Data Provider ROI",
+        "type": "bar",
+        "x_axis": "data_provider",
+        "y_axis": "roi",
+        "data": [
+          {"data_provider": "ProviderA", "roi": 2.8},
+          {"data_provider": "ProviderC", "roi": 2.4},
+          {"data_provider": "ProviderB", "roi": 2.1},
+          {"data_provider": "ProviderD", "roi": 1.9},
+          {"data_provider": "ProviderE", "roi": 1.5}
+        ]
+      },
+      {
+        "id": "platform_efficiency",
+        "title": "Platform Efficiency (Revenue vs Platform Fee)",
+        "type": "scatter",
+        "data": [
+          {"platform": "Google", "platform_fee": 20000, "revenue": 120000},
+          {"platform": "SpotX", "platform_fee": 15000, "revenue": 80000},
+          {"platform": "AppNexus", "platform_fee": 18000, "revenue": 95000},
+          {"platform": "Freewheel", "platform_fee": 12000, "revenue": 65000},
+          {"platform": "Rubicon", "platform_fee": 22000, "revenue": 140000}
+        ]
+      },
+      {
+        "id": "segment_performance",
+        "title": "Best Performing Audience Segments",
+        "type": "bar",
+        "x_axis": "segment_name",
+        "y_axis": "revenue",
+        "data": [
+          {"segment_name": "Health Enthusiasts", "revenue": 210000},
+          {"segment_name": "Young Tech Users", "revenue": 180000},
+          {"segment_name": "Luxury Shoppers", "revenue": 165000},
+          {"segment_name": "Sports Fans", "revenue": 140000},
+          {"segment_name": "Travel Seekers", "revenue": 120000}
+        ]
+      },
+      {
+        "id": "segment_saturation",
+        "title": "Segment Saturation (High Impressions Low Revenue)",
+        "type": "bar",
+        "x_axis": "segment_name",
+        "y_axis": "impressions",
+        "data": [
+          {"segment_name": "Students", "impressions": 12000000, "revenue": 15000},
+          {"segment_name": "Budget Shoppers", "impressions": 9500000, "revenue": 22000},
+          {"segment_name": "News Readers", "impressions": 8200000, "revenue": 18000}
+        ]
+      },
+      {
+        "id": "vertical_growth",
+        "title": "Revenue by Vertical",
+        "type": "pie",
+        "data": [
+          {"vertical": "Health", "revenue": 350000},
+          {"vertical": "Food", "revenue": 210000},
+          {"vertical": "Auto", "revenue": 195000},
+          {"vertical": "Tech", "revenue": 175000},
+          {"vertical": "Travel", "revenue": 145000},
+          {"vertical": "Finance", "revenue": 120000}
+        ]
+      },
+      {
+        "id": "advertiser_revenue",
+        "title": "Top Advertisers by Revenue",
+        "type": "bar",
+        "x_axis": "advertiser",
+        "y_axis": "revenue",
+        "data": [
+          {"advertiser": "Toyota", "revenue": 200000},
+          {"advertiser": "Paychex", "revenue": 150000},
+          {"advertiser": "Nike", "revenue": 135000},
+          {"advertiser": "Apple", "revenue": 120000},
+          {"advertiser": "Samsung", "revenue": 95000}
+        ]
+      }
+    ]
+  }
+}

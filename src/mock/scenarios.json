@@ -1,0 +1,23 @@
+{
+  "scenarios": [
+    {
+      "scenario": "Increase Top Provider Usage",
+      "assumption": "Increase impressions from top 2 providers by 20%",
+      "expected_revenue_increase": 150000,
+      "expected_net_revenue_increase": 105000,
+      "confidence": 0.84
+    },
+    {
+      "scenario": "Reduce Saturated Segments",
+      "assumption": "Reduce impressions in saturated segments by 30%",
+      "expected_net_revenue_increase": 72000,
+      "confidence": 0.79
+    },
+    {
+      "scenario": "Shift Budget to Health Vertical",
+      "assumption": "Increase advertising allocation in health vertical by 25%",
+      "expected_revenue_increase": 180000,
+      "confidence": 0.83
+    }
+  ]
+}
